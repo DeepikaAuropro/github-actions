@@ -1,0 +1,11 @@
+name: Deployment
+on: push
+
+jobs:
+  python-docker:
+    runs-on: ubuntu-latest
+    container:
+      image: deepu0305/vscodedocker
+    steps:
+     - name: run image
+       run: docker images
